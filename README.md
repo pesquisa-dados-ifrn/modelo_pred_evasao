@@ -43,10 +43,6 @@ Este código será integrado em uma aplicação Streamlit para permitir que usu�
 ## Como Executar
 
 1. Clone o repositório.
-2. Instale as dependências necessárias (consulte `requirements.txt` se houver).
+2. Instale as dependências necessárias.
 3. Execute o script principal para treinar o modelo.
-4. O modelo será salvo como `modelo_pred.pickle`, e os valores únicos da variável alvo como `output_class.pickle`.
-
----
-
-Este README oferece uma visão geral clara e informativa para quem deseja entender e rodar o projeto.
+4. O modelo será salvo como `modelo_pred.pickle`, e os valores únicos da variável alvo como `output_class.pickle`.o.
