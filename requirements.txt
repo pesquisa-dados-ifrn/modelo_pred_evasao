@@ -1,0 +1,6 @@
+matplotlib
+missingno
+pandas
+scikit_learn
+seaborn
+pickle
