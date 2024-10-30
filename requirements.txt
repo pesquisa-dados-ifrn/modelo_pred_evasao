@@ -4,3 +4,5 @@ pandas
 scikit_learn
 seaborn
 pickle
+imblearn
+ydata_profiling
