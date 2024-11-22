@@ -1,8 +1,10 @@
-matplotlib
-missingno
-pandas
-scikit_learn
-seaborn
+os
 pickle
+pandas
+missingno
+matplolib.pyplot
+seaborn
+sklearn
 imblearn
 ydata_profiling
+grid_search
