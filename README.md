@@ -38,7 +38,7 @@ Este projeto visa construir um modelo de machine learning para prever a possibil
 4. **Criação e Treinamento do Modelo**:
    - Modelos de classificação utilizando o `RandomForestClassifier`, `CatBoostClassifier`, `LGBMClassifier`, e `XGBClassifier`.
    - Treinamento do modelo nos dados balanceados.
-   - Avaliação com métricas como acurácia, relatório de classificação, e matriz de confusão.
+   - Avaliação com métricas como  validação cruzada, acurácia, relatório de classificação, e matriz de confusão.
 
 5. **Salvamento do Modelo**:
    - O modelo treinado é salvo em formato pickle como `modelo_treinado.pickle` para futuras predições.
