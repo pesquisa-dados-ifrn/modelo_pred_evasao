@@ -1,4 +1,3 @@
-```markdown
 # Predição de Evasão de Alunos - IFRN
 
 Este projeto visa construir um modelo de machine learning para prever a possibilidade de evasão de alunos do Instituto Federal do Rio Grande do Norte (IFRN), utilizando um conjunto de dados que contém informações desses alunos. O modelo tem como objetivo identificar possíveis riscos de evasão e auxiliar na criação de estratégias de intervenção.
@@ -8,7 +7,7 @@ Este projeto visa construir um modelo de machine learning para prever a possibil
 1. **Python**: Linguagem principal utilizada para manipulação de dados e construção do modelo.
 2. **Pandas**: Usada para manipulação de dados, criação de DataFrames e processamento de valores ausentes.
 3. **Missingno**: Ferramenta de visualização de dados ausentes.
-4. **Matplotlib e Seaborn**: Bibliotecas de visualização de gráficos, usadas para criar gráficos como histogramas, matriz de confusão, e curva ROC.
+4. **Matplotlib e Seaborn**: Bibliotecas de visualização de gráficos, usadas para criar gráficos como histogramas, matriz de confusão e curva ROC.
 5. **Scikit-learn**: Biblioteca de machine learning utilizada para:
    - **Imputação de valores faltantes**.
    - **Codificação de variáveis categóricas** com OneHotEncoder.
@@ -36,9 +35,9 @@ Este projeto visa construir um modelo de machine learning para prever a possibil
    - Utilização de `GridSearchCV` para otimização dos hiperparâmetros dos modelos: RandomForest, CatBoost, LGBM e XGBoost.
 
 4. **Criação e Treinamento do Modelo**:
-   - Modelos de classificação utilizando o `RandomForestClassifier`, `CatBoostClassifier`, `LGBMClassifier`, e `XGBClassifier`.
+   - Modelos de classificação utilizando o `RandomForestClassifier`, `CatBoostClassifier`, `LGBMClassifier` e `XGBClassifier`.
    - Treinamento do modelo nos dados balanceados.
-   - Avaliação com métricas como  validação cruzada, acurácia, relatório de classificação, e matriz de confusão.
+   - Avaliação com métricas como validação cruzada, acurácia, relatório de classificação e matriz de confusão.
 
 5. **Salvamento do Modelo**:
    - O modelo treinado é salvo em formato pickle como `modelo_treinado.pickle` para futuras predições.
@@ -55,17 +54,16 @@ Este projeto visa construir um modelo de machine learning para prever a possibil
 
 1. Clone o repositório.
 2. Instale as dependências necessárias:
-   ```bash
+   ```
    pip install -r requirements.txt
    ```
 3. Execute o notebook `modelo_pred.ipynb` para treinar o modelo.
-4. O modelo será salvo como `modelo_treinado.pickle`, e os valores únicos da variável alvo como `output_class.pickle`.
+4. O modelo será salvo como `modelo_treinado.pickle` e os valores únicos da variável alvo como `output_class.pickle`.
 5. Para utilizar a interface Streamlit, execute:
-   ```bash
+   ```
    streamlit run app.py
    ```
 
 ## Futuro
 
 Este código será integrado em uma aplicação Streamlit para permitir que usuários façam novas predições de evasão de alunos, com uma interface interativa que possibilitará a visualização dos resultados em tempo real.
-```
