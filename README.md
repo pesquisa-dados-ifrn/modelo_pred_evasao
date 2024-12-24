@@ -1,3 +1,4 @@
+```markdown
 # Predição de Evasão de Alunos - IFRN
 
 Este projeto visa construir um modelo de machine learning para prever a possibilidade de evasão de alunos do Instituto Federal do Rio Grande do Norte (IFRN), utilizando um conjunto de dados que contém informações desses alunos. O modelo tem como objetivo identificar possíveis riscos de evasão e auxiliar na criação de estratégias de intervenção.
@@ -12,12 +13,12 @@ Este projeto visa construir um modelo de machine learning para prever a possibil
    - **Imputação de valores faltantes**.
    - **Codificação de variáveis categóricas** com OneHotEncoder.
    - **Divisão do dataset** em conjuntos de treino e teste.
-   - **Algoritmo RandomForest** para classificação.
+   - **Algoritmos de classificação**: RandomForest, CatBoost, LGBM e XGBoost.
    - **Métricas de avaliação**: Acurácia, relatório de classificação, matriz de confusão.
 6. **Imbalanced-learn (SMOTE)**: Técnica de balanceamento de classes para lidar com dados desbalanceados.
 7. **ydata-profiling**: Geração de relatórios detalhados sobre os dados para visualização e análise exploratória.
 8. **Pickle**: Para salvar o modelo treinado e os valores únicos da variável alvo, permitindo reutilização futura do modelo.
-9. **GridSearchCV (Scikit-learn)**: Técnica utilizada para otimização de hiperparâmetros do modelo de Random Forest.
+9. **GridSearchCV (Scikit-learn)**: Técnica utilizada para otimização de hiperparâmetros dos modelos de classificação.
 
 ## Estrutura do Projeto
 
@@ -32,10 +33,10 @@ Este projeto visa construir um modelo de machine learning para prever a possibil
    - Divisão estratificada para garantir a representatividade da classe alvo.
 
 3. **Execução do Grid Search**:
-   - Utilização de `GridSearchCV` para otimização dos hiperparâmetros do modelo Random Forest.
+   - Utilização de `GridSearchCV` para otimização dos hiperparâmetros dos modelos: RandomForest, CatBoost, LGBM e XGBoost.
 
 4. **Criação e Treinamento do Modelo**:
-   - Modelo de classificação utilizando o `RandomForestClassifier`.
+   - Modelos de classificação utilizando o `RandomForestClassifier`, `CatBoostClassifier`, `LGBMClassifier`, e `XGBClassifier`.
    - Treinamento do modelo nos dados balanceados.
    - Avaliação com métricas como acurácia, relatório de classificação, e matriz de confusão.
 
@@ -47,6 +48,9 @@ Este projeto visa construir um modelo de machine learning para prever a possibil
    - Relatório de análise exploratória dos dados gerado com `ydata_profiling`.
    - Relatório gerado como `relatorio_dados_evasao_modificado.html`.
 
+7. **Interface Streamlit**:
+   - O código será integrado a uma aplicação Streamlit para permitir que usuários façam novas predições de evasão, com uma interface interativa e simples de usar.
+
 ## Como Executar
 
 1. Clone o repositório.
@@ -56,7 +60,12 @@ Este projeto visa construir um modelo de machine learning para prever a possibil
    ```
 3. Execute o notebook `modelo_pred.ipynb` para treinar o modelo.
 4. O modelo será salvo como `modelo_treinado.pickle`, e os valores únicos da variável alvo como `output_class.pickle`.
+5. Para utilizar a interface Streamlit, execute:
+   ```bash
+   streamlit run app.py
+   ```
 
 ## Futuro
 
-Este código será integrado em uma aplicação Streamlit para permitir que usuários façam novas predições, com uma interface interativa e simples de usar.
+Este código será integrado em uma aplicação Streamlit para permitir que usuários façam novas predições de evasão de alunos, com uma interface interativa que possibilitará a visualização dos resultados em tempo real.
+```
